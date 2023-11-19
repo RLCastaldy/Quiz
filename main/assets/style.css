@@ -1,0 +1,114 @@
+* {
+
+}
+
+body {
+
+}
+
+.scores {
+    position: fixed;
+    top: 0px;
+    width: 100px;
+    left: 0px;
+}
+
+.timer {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+}
+
+.quizStart {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+#startBttn {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question1 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#answers1 {
+    position: relative;
+    text-align: center;
+}
+
+.question2 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#answers2 {
+    position: relative;
+    text-align: center;
+}
+
+.question3 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#answers3 {
+    position: relative;
+    text-align: center;
+}
+
+.question4 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#answers4 {
+    position: relative;
+    text-align: center;
+}
+
+.question5 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#answers5 {
+    position: relative;
+    text-align: center;
+}
+
+.finalScore {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#submission {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
