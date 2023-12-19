@@ -37,6 +37,21 @@ body {
     width: 25%;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+
+#answerCorrect {
+     position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#answerIncorrect {
+     position: relative;
+    top: 200px;
+    text-align: center;
+    display: none;
 }
 
 .question1 {
@@ -46,9 +61,28 @@ body {
     display: none;
 }
 
-#answers1 {
+#answers1-1 {
     position: relative;
     text-align: center;
+    cursor: pointer;
+}
+
+#answers1-2 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers1-3 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers1-4 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
 .question2 {
@@ -58,9 +92,28 @@ body {
     display: none;
 }
 
-#answers2 {
+#answers2-1 {
     position: relative;
     text-align: center;
+    cursor: pointer;
+}
+
+#answers2-2 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers2-3 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers2-4 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
 .question3 {
@@ -70,9 +123,28 @@ body {
     display: none;
 }
 
-#answers3 {
+#answers3-1 {
     position: relative;
     text-align: center;
+    cursor: pointer;
+}
+
+#answers3-2 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers3-3 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers3-4 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
 .question4 {
@@ -82,9 +154,28 @@ body {
     display: none;
 }
 
-#answers4 {
+#answers4-1 {
     position: relative;
     text-align: center;
+    cursor: pointer;
+}
+
+#answers4-2 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers4-3 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers4-4 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
 .question5 {
@@ -94,9 +185,28 @@ body {
     display: none;
 }
 
-#answers5 {
+#answers5-1 {
     position: relative;
     text-align: center;
+    cursor: pointer;
+}
+
+#answers5-2 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers5-3 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#answers5-4 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
 .finalScore {
