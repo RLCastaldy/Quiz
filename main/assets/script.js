@@ -1,14 +1,35 @@
 const highScores= document.querySelector('.scores');
-const timeRemaining= document.querySelector('.timer')
 const quizStart= document.querySelector('.quizStart');
 const startBtn= document.querySelector('#startBttn');
 const question1= document.querySelector('.question1');
+const submitInitials=document.querySelector('#submitFrm');
 
 startBtn.addEventListener("click", function() {
  if (question1.style.display === "none") {
     question1.style.display = "block";
     quizStart.style.display = "none";
     startBtn.style.display = "none";
+    var timeRemaining= 30;
+
+    var downloadTimer = setInterval(function function1(){
+      document.getElementById("timer").innerHTML ="Time Remaining:"+ timeRemaining + 
+      "&nbsp";
+  
+      timeRemaining -= 1;
+      if(timeRemaining <= 0){
+          finalScore.style.display = "block";
+          quizStart.style.display = "none";
+          question1.style.display = "none";
+          question2.style.display = "none";
+          question3.style.display = "none";
+          question4.style.display = "none";
+          question5.style.display = "none";
+          submitInitials.style.display = "block";
+          clearInterval(downloadTimer);
+          document.getElementById("timer").innerHTML = "Time is up!"
+      }
+      }, 1000);
+
   } else {
     question1.style.display = "none";
   }
@@ -232,7 +253,7 @@ const answerFive1=document.querySelector('#answers5-1');
 const answerFive2=document.querySelector('#answers5-2');
 const answerFive3=document.querySelector('#answers5-3');
 const answerFive4=document.querySelector('#answers5-4');
-const finalScore= document.querySelector('.finalScore');
+const finalScore=document.querySelector('.finalScore');
 
 answerFive3.addEventListener("click", function() {
  if (finalScore.style.display === "none") {
@@ -240,6 +261,7 @@ answerFive3.addEventListener("click", function() {
     question5.style.display = "none";
     correctAnswer.style.display = "block";
     incorrectAnswer.style.display = "none";
+    submitInitials.style.display = "block";
   }
   else {
     finalScore.style.display = "none";
@@ -252,6 +274,7 @@ answerFive1.addEventListener("click", function() {
     question5.style.display = "none";
     correctAnswer.style.display = "none";
     incorrectAnswer.style.display = "block";
+    submitInitials.style.display = "block";
   }
   else {
     finalScore.style.display = "none";
@@ -264,6 +287,7 @@ answerFive2.addEventListener("click", function() {
     question5.style.display = "none";
     correctAnswer.style.display = "none";
     incorrectAnswer.style.display = "block";
+    submitInitials.style.display = "block";
   }
   else {
     finalScore.style.display = "none";
@@ -276,6 +300,7 @@ answerFive4.addEventListener("click", function() {
     question5.style.display = "none";
     correctAnswer.style.display = "none";
     incorrectAnswer.style.display = "block";
+    submitInitials.style.display = "block";
   }
   else {
     finalScore.style.display = "none";

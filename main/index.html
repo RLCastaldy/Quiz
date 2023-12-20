@@ -12,7 +12,7 @@
         <h3>High-Scores</h3>
     </div>
 
-    <div class ="timer">
+    <div id ="timer">
         <h3>Time Remaining: </h3>
     </div>
 
@@ -36,28 +36,28 @@
    
     <div id="answerIncorrect">
       <h3>
-      Sorry, that's incorrect.
+      Sorry, that's incorrect. -5 seconds
       </h3>
     </div>
 
     <div class="question1" style="display:none;">
         <h2>Question 1</h2>
-        <h3>What symbol precedes a class?</h3>
+        <h3>What symbol precedes an ID?</h3>
        
             <div id= "answers1-1">
-                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">1. "#"</h4>
+                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">1. %</h4>
                 </div>
                
                 <div id= "answers1-2">
-                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">2. "$"</h4>
+                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">2. $</h4>
                 </div>
                
                 <div id= "answers1-3">
-                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">3. "."</h4>
+                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">3. #</h4>
                 </div>
                
                 <div id= "answers1-4">
-                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">4. "&"</h4>
+                <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">4. &</h4>
             </div>
     </div>
 
@@ -65,19 +65,19 @@
         <h2>Question 2</h2>
         <h3>What is the largest header tag?</h3>
         <div id= "answers2-1">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">1. "h1"</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">1. h1</h4>
             </div>
            
             <div id= "answers2-2">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">2. "h100%"</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">2. h100%</h4>
             </div>
            
             <div id= "answers2-3">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">3. "hL"</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">3. hL</h4>
             </div>
            
             <div id= "answers2-4">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">4. "h6"</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">4. h6</h4>
         </div>
     </div>
 
@@ -85,19 +85,19 @@
         <h2>Question 3</h2>
         <h3>What represents equality in JS without allowing coercion?</h3>
         <div id= "answers3-1">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">1. "==="</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">1. ===</h4>
             </div>
            
             <div id= "answers3-2">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">2. "=="</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">2. ==</h4>
             </div>
            
             <div id= "answers3-3">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">3. "!="</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">3. !=</h4>
             </div>
            
             <div id= "answers3-4">
-            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">4. "!=="</h4>
+            <h4 style="background-color: darkblue; color: white; width: 25%; border-radius: 15px; margin-left: auto; margin-right: auto;">4. !==</h4>
         </div>
     </div>
 
@@ -146,8 +146,11 @@
         <h5>Your Final Score Is: </h5>
     </div>
 
-    <div id= "submission" style="display:none;">
-        <h6>Enter Initials:</h6>
+    <div id= "submitFrm" style="display:none;">
+        <form>
+            <label for="initials">Enter Initials</label><br>
+            <input type="text" id="submission"
+        </form>
     </div>
 
     <script src="./assets/script.js"></script>
