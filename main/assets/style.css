@@ -58,7 +58,6 @@ body {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }
 
 #answers1-1 {
@@ -89,7 +88,6 @@ body {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }
 
 #answers2-1 {
@@ -120,7 +118,6 @@ body {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }
 
 #answers3-1 {
@@ -151,7 +148,6 @@ body {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }
 
 #answers4-1 {
@@ -182,7 +178,6 @@ body {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }
 
 #answers5-1 {
@@ -213,12 +208,10 @@ body {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }
 
 #submission {
     position: relative;
     top: 200px;
     text-align: center;
-    display: none;
 }

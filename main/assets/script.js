@@ -4,7 +4,7 @@ const quizStart= document.querySelector('.quizStart');
 const startBtn= document.querySelector('#startBttn');
 const question1= document.querySelector('.question1');
 
-startBtn.addEventListener("click", function startQuiz() {
+startBtn.addEventListener("click", function() {
  if (question1.style.display === "none") {
     question1.style.display = "block";
     quizStart.style.display = "none";
@@ -22,7 +22,7 @@ const question2= document.querySelector('.question2');
 const correctAnswer= document.querySelector('#answerCorrect');
 const incorrectAnswer= document.querySelector('#answerIncorrect');
 
-answerOne3.addEventListener("click", function answerOneCorrect() {
+answerOne3.addEventListener("click", function() {
  if (question2.style.display === "none") {
     question2.style.display = "block";
     question1.style.display = "none";
@@ -33,7 +33,7 @@ answerOne3.addEventListener("click", function answerOneCorrect() {
   }
 });
 
-answerOne1.addEventListener("click", function answerOne1Incorrect() {
+answerOne1.addEventListener("click", function() {
  if (question2.style.display === "none") {
     question2.style.display = "block";
     question1.style.display = "none";
@@ -44,7 +44,7 @@ answerOne1.addEventListener("click", function answerOne1Incorrect() {
   }
 });
 
-answerOne2.addEventListener("click", function answerOne2Incorrect() {
+answerOne2.addEventListener("click", function() {
  if (question2.style.display === "none") {
     question2.style.display = "block";
     question1.style.display = "none";
@@ -55,7 +55,7 @@ answerOne2.addEventListener("click", function answerOne2Incorrect() {
   }
 });
 
-answerOne4.addEventListener("click", function answerOne4Incorrect() {
+answerOne4.addEventListener("click", function() {
  if (question2.style.display === "none") {
     question2.style.display = "block";
     question1.style.display = "none";
@@ -72,7 +72,7 @@ const answerTwo3=document.querySelector('#answers2-3');
 const answerTwo4=document.querySelector('#answers2-4');
 const question3= document.querySelector('.question3');
 
-answerTwo1.addEventListener("click", function answerTwoCorrect() {
+answerTwo1.addEventListener("click", function() {
  if (question3.style.display === "none") {
     question3.style.display = "block";
     question2.style.display = "none";
@@ -84,7 +84,7 @@ answerTwo1.addEventListener("click", function answerTwoCorrect() {
   }
 });
 
-answerTwo2.addEventListener("click", function answerTwo2Incorrect() {
+answerTwo2.addEventListener("click", function() {
  if (question3.style.display === "none") {
     question3.style.display = "block";
     question2.style.display = "none";
@@ -96,7 +96,7 @@ answerTwo2.addEventListener("click", function answerTwo2Incorrect() {
   }
 });
 
-answerTwo3.addEventListener("click", function answerTwo3Incorrect() {
+answerTwo3.addEventListener("click", function() {
  if (question3.style.display === "none") {
     question3.style.display = "block";
     question2.style.display = "none";
@@ -108,7 +108,7 @@ answerTwo3.addEventListener("click", function answerTwo3Incorrect() {
   }
 });
 
-answerTwo4.addEventListener("click", function answerTwo4Incorrect() {
+answerTwo4.addEventListener("click", function() {
  if (question3.style.display === "none") {
     question3.style.display = "block";
     question2.style.display = "none";
@@ -126,7 +126,7 @@ const answerThree3=document.querySelector('#answers3-3');
 const answerThree4=document.querySelector('#answers3-4');
 const question4= document.querySelector('.question4');
 
-answerThree1.addEventListener("click", function answerThreeCorrect() {
+answerThree1.addEventListener("click", function() {
  if (question4.style.display === "none") {
     question4.style.display = "block";
     question3.style.display = "none";
@@ -138,7 +138,7 @@ answerThree1.addEventListener("click", function answerThreeCorrect() {
   }
 });
 
-answerThree2.addEventListener("click", function answerThree2Incorrect() {
+answerThree2.addEventListener("click", function() {
  if (question4.style.display === "none") {
     question4.style.display = "block";
     question3.style.display = "none";
@@ -150,7 +150,7 @@ answerThree2.addEventListener("click", function answerThree2Incorrect() {
   }
 });
 
-answerThree3.addEventListener("click", function answerThree3Incorrect() {
+answerThree3.addEventListener("click", function() {
  if (question4.style.display === "none") {
     question4.style.display = "block";
     question3.style.display = "none";
@@ -162,7 +162,7 @@ answerThree3.addEventListener("click", function answerThree3Incorrect() {
   }
 });
 
-answerThree4.addEventListener("click", function answerThree4Incorrect() {
+answerThree4.addEventListener("click", function() {
  if (question4.style.display === "none") {
     question4.style.display = "block";
     question3.style.display = "none";
@@ -180,7 +180,7 @@ const answerFour3=document.querySelector('#answers4-3');
 const answerFour4=document.querySelector('#answers4-4');
 const question5= document.querySelector('.question5');
 
-answerFour3.addEventListener("click", function answerFourCorrect() {
+answerFour3.addEventListener("click", function() {
  if (question5.style.display === "none") {
     question5.style.display = "block";
     question4.style.display = "none";
@@ -192,7 +192,7 @@ answerFour3.addEventListener("click", function answerFourCorrect() {
   }
 });
 
-answerFour1.addEventListener("click", function answerFour3Incorrect() {
+answerFour1.addEventListener("click", function() {
  if (question5.style.display === "none") {
     question5.style.display = "block";
     question4.style.display = "none";
@@ -204,7 +204,7 @@ answerFour1.addEventListener("click", function answerFour3Incorrect() {
   }
 });
 
-answerFour2.addEventListener("click", function answerFour3Incorrect() {
+answerFour2.addEventListener("click", function() {
  if (question5.style.display === "none") {
     question5.style.display = "block";
     question4.style.display = "none";
@@ -216,7 +216,7 @@ answerFour2.addEventListener("click", function answerFour3Incorrect() {
   }
 });
 
-answerFour4.addEventListener("click", function answerFour4Incorrect() {
+answerFour4.addEventListener("click", function() {
  if (question5.style.display === "none") {
     question5.style.display = "block";
     question4.style.display = "none";
@@ -234,7 +234,7 @@ const answerFive3=document.querySelector('#answers5-3');
 const answerFive4=document.querySelector('#answers5-4');
 const finalScore= document.querySelector('.finalScore');
 
-answerFive3.addEventListener("click", function answerFiveCorrect() {
+answerFive3.addEventListener("click", function() {
  if (finalScore.style.display === "none") {
     finalScore.style.display = "block";
     question5.style.display = "none";
@@ -246,7 +246,7 @@ answerFive3.addEventListener("click", function answerFiveCorrect() {
   }
 });
 
-answerFour1.addEventListener("click", function answerFive1Incorrect() {
+answerFive1.addEventListener("click", function() {
  if (finalScore.style.display === "none") {
     finalScore.style.display = "block";
     question5.style.display = "none";
@@ -258,7 +258,7 @@ answerFour1.addEventListener("click", function answerFive1Incorrect() {
   }
 });
 
-answerFour2.addEventListener("click", function answerFive2Incorrect() {
+answerFive2.addEventListener("click", function() {
  if (finalScore.style.display === "none") {
     finalScore.style.display = "block";
     question5.style.display = "none";
@@ -270,7 +270,7 @@ answerFour2.addEventListener("click", function answerFive2Incorrect() {
   }
 });
 
-answerFour4.addEventListener("click", function answerFive4Incorrect() {
+answerFive4.addEventListener("click", function() {
  if (finalScore.style.display === "none") {
     finalScore.style.display = "block";
     question5.style.display = "none";
