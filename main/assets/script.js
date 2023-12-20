@@ -228,10 +228,10 @@ answerFour4.addEventListener("click", function answerFour4Incorrect() {
   }
 });
 
-const answerFive1=document.querySelector('#answers4-1');
-const answerFive2=document.querySelector('#answers4-2');
-const answerFive3=document.querySelector('#answers4-3');
-const answerFive4=document.querySelector('#answers4-4');
+const answerFive1=document.querySelector('#answers5-1');
+const answerFive2=document.querySelector('#answers5-2');
+const answerFive3=document.querySelector('#answers5-3');
+const answerFive4=document.querySelector('#answers5-4');
 const finalScore= document.querySelector('.finalScore');
 
 answerFive3.addEventListener("click", function answerFiveCorrect() {
