@@ -5,6 +5,7 @@ const question1 = document.querySelector('.question1');
 const submitInitials = document.querySelector('#submitForm');
 let timeRemaining= 30;
 let displayScore= 0;
+console.log(displayScore);
 
 startBtn.addEventListener("click", function() {
   if (question1.style.display === "none") {
@@ -26,10 +27,11 @@ const gameTimer = setInterval(() => {
           question4.style.display = "none";
           question5.style.display = "none";
           submitInitials.style.display = "block";
+          document.getElementById('finalScore').textContent = "Final Score:" +displayScore;
           document.getElementById("timer").innerHTML = "Game Over!"
       }
       }, 1000);
-      document.getElementById('finalScore').textContent = "Final Score:" +displayScore;
+      
 
   } else {
     question1.style.display = "none";
@@ -50,6 +52,7 @@ answerOne3.addEventListener("click", function() {
     question1.style.display = "none";
     correctAnswer.style.display = "block";
     displayScore += 3;
+    console.log(displayScore);
   } else {
     question2.style.display = "none";
   }
@@ -104,6 +107,7 @@ answerOne1.addEventListener("click", function() {
         correctAnswer.style.display = "block";
         incorrectAnswer.style.display = "none";
         displayScore += 3;
+        console.log(displayScore);
       } else {
         question3.style.display = "none";
       }
@@ -161,6 +165,7 @@ answerOne1.addEventListener("click", function() {
         correctAnswer.style.display = "block";
         incorrectAnswer.style.display = "none";
         displayScore += 3;
+        console.log(displayScore);
       } else {
         question4.style.display = "none";
       }
@@ -218,6 +223,7 @@ answerOne1.addEventListener("click", function() {
         correctAnswer.style.display = "block";
         incorrectAnswer.style.display = "none";
         displayScore += 3;
+        console.log(displayScore);
       } else {
         question5.style.display = "none";
       }
@@ -271,6 +277,7 @@ answerOne1.addEventListener("click", function() {
     answerFive3.addEventListener("click", function() {
       if (finalScore.style.display === "none") {
         displayScore += 3;
+        console.log(displayScore);
         timeRemaining = 0;
         } else {
         finalScore.style.display = "none";
@@ -303,8 +310,18 @@ answerOne1.addEventListener("click", function() {
    
     document.getElementById("submitForm").addEventListener("submit", function(event) {
   event.preventDefault();
+
   var initials = document.getElementById("submission").value;
-  localStorage.setItem("initials", name);
+  localStorage.setItem("initials", initials,);
   document.getElementById("submission").value = "";
   alert("Name saved successfully!");
+
+  var savedScores = JSON.parse(localStorage.getItem("highScores"))|| []
+  var newScore={
+    score:displayScore,
+    initials:initials,
+  }
+
+  savedScores.push(newScore)
+  localStorage.setItem("highScores", JSON.stringify(savedScores))
 });
