@@ -2,8 +2,9 @@ const highScores = document.querySelector('.scores');
 const quizStart = document.querySelector('.quizStart');
 const startBtn = document.querySelector('#startBttn');
 const question1 = document.querySelector('.question1');
-const submitInitials = document.querySelector('#submitFrm');
+const submitInitials = document.querySelector('#submitForm');
 let timeRemaining= 30;
+let displayScore= 0;
 
 startBtn.addEventListener("click", function() {
   if (question1.style.display === "none") {
@@ -11,10 +12,12 @@ startBtn.addEventListener("click", function() {
     quizStart.style.display = "none";
     startBtn.style.display = "none";
 
-const timer = setInterval(() => {
+const gameTimer = setInterval(() => {
   timeRemaining--;
   document.getElementById('timer').textContent = "Time Remaining:" + timeRemaining;
       if(timeRemaining <= 0){
+      clearInterval(gameTimer);
+          playerScore.style.display = "block";
           finalScore.style.display = "block";
           quizStart.style.display = "none";
           question1.style.display = "none";
@@ -23,10 +26,10 @@ const timer = setInterval(() => {
           question4.style.display = "none";
           question5.style.display = "none";
           submitInitials.style.display = "block";
-          clearInterval(timer);
           document.getElementById("timer").innerHTML = "Game Over!"
       }
       }, 1000);
+      document.getElementById('finalScore').textContent = "Final Score:" +displayScore;
 
   } else {
     question1.style.display = "none";
@@ -46,6 +49,7 @@ answerOne3.addEventListener("click", function() {
     question2.style.display = "block";
     question1.style.display = "none";
     correctAnswer.style.display = "block";
+    displayScore += 3;
   } else {
     question2.style.display = "none";
   }
@@ -99,6 +103,7 @@ answerOne1.addEventListener("click", function() {
         question2.style.display = "none";
         correctAnswer.style.display = "block";
         incorrectAnswer.style.display = "none";
+        displayScore += 3;
       } else {
         question3.style.display = "none";
       }
@@ -155,6 +160,7 @@ answerOne1.addEventListener("click", function() {
         question3.style.display = "none";
         correctAnswer.style.display = "block";
         incorrectAnswer.style.display = "none";
+        displayScore += 3;
       } else {
         question4.style.display = "none";
       }
@@ -211,6 +217,7 @@ answerOne1.addEventListener("click", function() {
         question4.style.display = "none";
         correctAnswer.style.display = "block";
         incorrectAnswer.style.display = "none";
+        displayScore += 3;
       } else {
         question5.style.display = "none";
       }
@@ -259,31 +266,20 @@ answerOne1.addEventListener("click", function() {
     const answerFive2 = document.querySelector('#answers5-2');
     const answerFive3 = document.querySelector('#answers5-3');
     const answerFive4 = document.querySelector('#answers5-4');
-    const finalScore = document.querySelector('.finalScore');
+    const finalScore = document.querySelector('#finalScore');
 
     answerFive3.addEventListener("click", function() {
       if (finalScore.style.display === "none") {
-        finalScore.style.display = "block";
-        question5.style.display = "none";
-        correctAnswer.style.display = "block";
-        incorrectAnswer.style.display = "none";
-        submitInitials.style.display = "block";
+        displayScore += 3;
         timeRemaining = 0;
-        document.getElementById('timer').textContent = "Game Over!" +timeRemaining;
-      } else {
+        } else {
         finalScore.style.display = "none";
       }
     });
 
     answerFive1.addEventListener("click", function() {
       if (finalScore.style.display === "none") {
-        finalScore.style.display = "block";
-        question5.style.display = "none";
-        correctAnswer.style.display = "none";
-        incorrectAnswer.style.display = "block";
-        submitInitials.style.display = "block";
         timeRemaining = 0;
-        document.getElementById('timer').textContent = "Game Over!" +timeRemaining;
       } else {
         finalScore.style.display = "none";
       }
@@ -291,28 +287,24 @@ answerOne1.addEventListener("click", function() {
 
     answerFive2.addEventListener("click", function() {
       if (finalScore.style.display === "none") {
-        finalScore.style.display = "block";
-        question5.style.display = "none";
-        correctAnswer.style.display = "none";
-        incorrectAnswer.style.display = "block";
-        submitInitials.style.display = "block";
         timeRemaining = 0;
-        document.getElementById('timer').textContent = "Game Over!" +timeRemaining;
-      } else {
+        } else {
         finalScore.style.display = "none";
       }
     });
 
     answerFive4.addEventListener("click", function() {
       if (finalScore.style.display === "none") {
-        finalScore.style.display = "block";
-        question5.style.display = "none";
-        correctAnswer.style.display = "none";
-        incorrectAnswer.style.display = "block";
-        submitInitials.style.display = "block";
         timeRemaining = 0;
-        document.getElementById('timer').textContent = "Game Over!" +timeRemaining;
-      } else {
+        } else {
         finalScore.style.display = "none";
       }
     });
+   
+    document.getElementById("submitForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var initials = document.getElementById("submission").value;
+  localStorage.setItem("initials", name);
+  document.getElementById("submission").value = "";
+  alert("Name saved successfully!");
+});

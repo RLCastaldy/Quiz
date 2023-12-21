@@ -13,13 +13,12 @@
     </div>
 
     <div id ="timer">
-        <h3>Time Remaining: </h3>
     </div>
 
     <div class ="quizStart">
         <h1>Code Quiz</h1>
         <p>Try answering as many of the questions as possible within the time limit.<br>
-            You will be given 30 seconds and questions are multiple choice.<br>
+            You will be given 30 seconds and questions are multiple choice.<br>Wrong answers will deduct 5 seconds from the clock, while correct answers will add 3 points to your score.<br>
             Scores are logged so you can track your improvement across attempts.<br>
             Good Luck!!</p>
     </div>
@@ -141,17 +140,19 @@
         </div>
     </div>
 
-    <div class ="finalScore" style="display:none;">
+    <div id ="finalScore" style="display:none;">
         <h2>Finished!</h2>
-        <h5>Your Final Score Is: </h5>
+    </div>
+   
+    <div id ="playerScore" style="display:none;">
+      <h2>
+      </h2>
     </div>
 
-    <div id= "submitFrm" style="display:none;">
-        <form>
-            <label for="initials">Enter Initials</label><br>
-            <input type="text" id="submission"
-        </form>
-    </div>
+    <form id="submitForm" style="display: none;"><label for="initals">Enter Initials</label><br>
+  <input type="text" id="submission" placeholder="Initials">
+  <button type="submit">Submit</button>
+</form>
 
     <script src="./assets/script.js"></script>
    
